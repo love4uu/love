@@ -269,7 +269,7 @@
 <body>
 
 <div class="clouds" id="clouds" aria-hidden="true"></div>
-<audio id="bgmAudio" src="bgm.mp3" loop preload="auto"></audio>
+<audio id="bgmAudio" src="bgm.mp3" loop preload="metadata"></audio>
 <button class="music-btn" id="musicBtn" onclick="toggleMusic(event)" title="音乐">🎵</button>
 
 <main class="main-wrap">
@@ -308,12 +308,12 @@
         <img src="photo1_thumb.webp" alt="合照1" loading="lazy" width="200" height="150" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
         <img src="photo2_thumb.webp" alt="合照2" loading="lazy" width="200" height="150" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
         <img src="photo3_thumb.webp" alt="合照3" loading="lazy" width="200" height="150" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
-        <img src="photo4_thumb.webp" alt="合照4" loading="lazy" width="200" height="150" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">      </div>
+        <img src="photo4_thumb.webp" alt="合照4" loading="lazy" width="200" height="150" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;">
+      </div>
     </div>
   </div>
 
-  <!-- 模块2: gift -->
-  <div class="module" id="modVideo">
+    <div class="module" id="modVideo">
     <button class="mod-btn" onclick="toggleModule('modVideo')" aria-expanded="false" aria-label="打开礼物视频">
       <div class="mod-icon video">🎁</div>
       <div class="mod-info">
@@ -340,13 +340,422 @@
       <span class="mod-arrow">▼</span>
     </button>
     <div class="mod-body">
-      <div class="letter-card">
-        <p>Dear 屈倩宇，<br>
-       哈喽哈喽，好久没见，最近过的怎么样呢？好像最近到处都有雨，出门记得看下天气预报带伞哦，注意温度变化，穿好衣服别着凉也别热着了，我这边虽然说是下雨，但是基本下在了我在室内的时候，很少遇到需要打伞的时候，希望你也是这样，愿你出行皆遇晴空，无雨亦无烈日灼人。<br>
-       这一段强制加班，不过其实还好，忙起来也不会想什么其他的东西了，而且我前一段状态不好有点影响工作进度，还被老板催了，最近加班补回来了已经。我已经渐渐习惯现在的生活了，只是周五的时候难得不加班，突然不太想回家，那一天有一点点，就一点点累，感觉回家后空荡荡的，没有人在等我了。<br>
-       公司这边可能六月多能开始申请版号，后面游戏上线可能要到明年？我也说不好，一边找厦门的工作一边看吧，能有合适的工作就早点去厦门，没有的话可能要多待一两个月了。公司这边对我挺好的，我还是要好好完成自己的工作。<br>
-       最近啊，有时候会想，我运气真的好好，从小到大，遇到的人都好好，无论是朋友、同学、同事，还是你，都是很好很好的人，网上路上认识的陌生人也都很好很好，会感觉这世界很温柔呢。<br>
-       你呢？最近过的开心吗？有遇到什么我需要帮助的事情吗？真需要我记得打电话哦，我随时都在。那，好好吃饭（一天至少一顿饭，然后其他的也吃点东西吧，或者喝牛奶！），好好睡觉好好休息（可能还是少熬夜？不知道你最近什么作息，不过熬夜伤皮肤哦~嗯不说了你是医学生你比我懂这些），生理期到了记得喝红糖水，我最近发现好像还有姨妈汤这种东西，可惜给你买了你也不会收，那你自己需要了要记得买着喝哦；需要哄睡服务了可以喊我，嗯给我打电话喊醒哄你睡着我再睡就好。又啰嗦了，不好意思。<br>
-       其实啊，本来在纠结要不要给你写信，怎么给你写信，前一段有所准备，但是还是没想好吧。直到今天刷小红看到，我其实之前也说过的，就是前不久地震嘛，有人会突然感觉活下来的日常都很珍贵，想要不留下遗憾去体验之前犹豫的事情，我之前也说，我把每一天都当作和你在一起的最后一天，所以我每天都在说我爱你，嗯，不留遗憾！而且我今天还有很多幸运的地方，后面有机会的话再和你说吧。<br>
-       那，五二零快乐哦！最重要的，要身体健康，天天开心哦，万事胜意！<br>
-       粥粥<br><span style="float:right">自：粥粥</span>
+      <div class="letter-card"><p>Dear 屈倩宇，<br>
+哈喽哈喽，好久没见，最近过的怎么样呢？好像最近到处都有雨，出门记得看下天气预报带伞哦，注意温度变化，穿好衣服别着凉也别热着了，我这边虽然说是下雨，但是基本下在了我在室内的时候，很少遇到需要打伞的时候，希望你也是这样，愿你出行皆遇晴空，无雨亦无烈日灼人。<br>
+这一段强制加班，不过其实还好，忙起来也不会想什么其他的东西了，而且我前一段状态不好有点影响工作进度，还被老板催了，最近加班补回来了已经。我已经渐渐习惯现在的生活了，只是周五的时候难得不加班，突然不太想回家，那一天有一点点，就一点点累，感觉回家后空荡荡的，没有人在等我了。<br>
+公司这边可能六月多能开始申请版号，后面游戏上线可能要到明年？我也说不好，一边找厦门的工作一边看吧，能有合适的工作就早点去厦门，没有的话可能要多待一两个月了。公司这边对我挺好的，我还是要好好完成自己的工作。<br>
+最近啊，有时候会想，我运气真的好好，从小到大，遇到的人都好好，无论是朋友、同学、同事，还是你，都是很好很好的人，网上路上认识的陌生人也都很好很好，会感觉这世界很温柔呢。<br>
+你呢？最近过的开心吗？有遇到什么我需要帮助的事情吗？真需要我记得打电话哦，我随时都在。那，好好吃饭（一天至少一顿饭，然后其他的也吃点东西吧，或者喝牛奶！），好好睡觉好好休息（可能还是少熬夜？不知道你最近什么作息，不过熬夜伤皮肤哦~嗯不说了你是医学生你比我懂这些），生理期到了记得喝红糖水，我最近发现好像还有姨妈汤这种东西，可惜给你买了你也不会收，那你自己需要了要记得买着喝哦；需要哄睡服务了可以喊我，嗯给我打电话喊醒哄你睡着我再睡就好。又啰嗦了，不好意思。<br>
+其实啊，本来在纠结要不要给你写信，怎么给你写信，前一段有所准备，但是还是没想好吧。直到今天刷小红看到，我其实之前也说过的，就是前不久地震嘛，有人会突然感觉活下来的日常都很珍贵，想要不留下遗憾去体验之前犹豫的事情，我之前也说，我把每一天都当作和你在一起的最后一天，所以我每天都在说我爱你，嗯，不留遗憾！而且我今天还有很多幸运的地方，后面有机会的话再和你说吧。<br>
+那，五二零快乐哦！最重要的，要身体健康，天天开心哦，万事胜意！<br>
+粥粥</p></div>
+    </div>
+  </div>
+
+</main>
+
+<!-- 底部场景：小动物 + 简笔小草 + 极简地面线 -->
+<svg class="bottom-animals" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+  <!-- 地面线 -->
+  <path d="M0,128 Q60,135 120,126 Q180,118 240,124 Q300,130 360,120 Q390,116 400,119"
+        fill="none" stroke="#d8c8ce" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- === 小草（避开花朵和动物位置）=== -->
+  <g transform="translate(35, 124)" stroke="#c8dbb8" stroke-width="1.1" fill="none" stroke-linecap="round">
+    <path d="M0,0 Q3,-10 1,-18"/><path d="M0,0 Q-2,-12 -4,-20"/><path d="M0,0 Q6,-8 8,-14"/>
+  </g>
+  <g transform="translate(78, 126)" stroke="#bcd0a8" stroke-width="1" fill="none" stroke-linecap="round">
+    <path d="M0,0 Q-3,-14 -5,-22"/><path d="M0,0 Q2,-10 3,-16"/>
+  </g>
+  <g transform="translate(115, 124)" stroke="#c8d8b0" stroke-width="1" fill="none" stroke-linecap="round">
+    <path d="M0,0 Q-4,-8 -6,-14"/><path d="M0,0 Q2,-12 1,-20"/><path d="M0,0 Q6,-6 9,-10"/>
+  </g>
+  <g transform="translate(250, 125)" stroke="#bcd0a8" stroke-width="1.1" fill="none" stroke-linecap="round">
+    <path d="M0,0 Q-4,-11 -3,-19"/><path d="M0,0 Q3,-9 5,-15"/>
+  </g>
+  <g transform="translate(328, 124)" stroke="#c8dbb8" stroke-width="1" fill="none" stroke-linecap="round">
+    <path d="M0,0 Q-2,-10 -1,-16"/><path d="M0,0 Q5,-13 7,-21"/><path d="M0,0 Q2,-8 1,-12"/>
+  </g>
+  <g transform="translate(372, 124)" stroke="#b8cca0" stroke-width="1.1" fill="none" stroke-linecap="round">
+    <path d="M0,0 Q-2,-16 -1,-24"/><path d="M0,0 Q4,-9 6,-14"/><path d="M0,0 Q-5,-6 -8,-10"/>
+  </g>
+  <g transform="translate(200, 126)" stroke="#c0d4ac" stroke-width="0.9" fill="none" stroke-linecap="round">
+    <path d="M0,0 Q-1,-14 -3,-20"/><path d="M0,0 Q3,-8 4,-12"/>
+  </g>
+
+  <!-- === 小熊 === -->
+  <g transform="translate(14, 90)"><g class="breathe">
+    <ellipse cx="22" cy="24" rx="18" ry="16" fill="#fff" stroke="#e8b4b8" stroke-width="1.8"/>
+    <circle cx="22" cy="3" r="13" fill="#fff" stroke="#e8b4b8" stroke-width="1.8"/>
+    <circle cx="10" cy="-7" r="6" fill="#fff" stroke="#e8b4b8" stroke-width="1.5"/>
+    <circle cx="10" cy="-7" r="3.5" fill="#ffe8d0"/>
+    <circle cx="34" cy="-7" r="6" fill="#fff" stroke="#e8b4b8" stroke-width="1.5"/>
+    <circle cx="34" cy="-7" r="3.5" fill="#ffe8d0"/>
+    <circle cx="17" cy="1" r="1.6" fill="#c09098"/>
+    <circle cx="27" cy="1" r="1.6" fill="#c09098"/>
+    <ellipse cx="22" cy="6" rx="2.5" ry="1.8" fill="#e8b098"/>
+    <path d="M22,8 Q18,12 16,10" fill="none" stroke="#e8b4b8" stroke-width="1"/>
+    <path d="M22,8 Q26,12 28,10" fill="none" stroke="#e8b4b8" stroke-width="1"/>
+  </g></g>
+
+  <!-- === 小狗 === -->
+  <g transform="translate(95, 93)"><g class="breathe">
+    <ellipse cx="22" cy="22" rx="17" ry="14" fill="#fff" stroke="#e8c8a0" stroke-width="1.8"/>
+    <circle cx="22" cy="2" r="12" fill="#fff" stroke="#e8c8a0" stroke-width="1.8"/>
+    <ellipse cx="8" cy="-2" rx="6" ry="10" fill="#ffe8d0" stroke="#e8c8a0" stroke-width="1.3" transform="rotate(10 8 -2)"/>
+    <ellipse cx="36" cy="-2" rx="6" ry="10" fill="#ffe8d0" stroke="#e8c8a0" stroke-width="1.3" transform="rotate(-10 36 -2)"/>
+    <circle cx="17" cy="0" r="1.5" fill="#a08060"/>
+    <circle cx="27" cy="0" r="1.5" fill="#a08060"/>
+    <ellipse cx="22" cy="5" rx="2.5" ry="2" fill="#c8a080"/>
+    <path d="M38,18 Q48,8 42,-2" fill="none" stroke="#e8c8a0" stroke-width="2" stroke-linecap="round"/>
+  </g></g>
+
+  <!-- === 小猪 === -->
+  <g transform="translate(178, 94)"><g class="breathe">
+    <!-- 身体 -->
+    <ellipse cx="20" cy="20" rx="17" ry="14" fill="#fff" stroke="#f0b8c0" stroke-width="1.8"/>
+    <!-- 头 -->
+    <circle cx="20" cy="2" r="12" fill="#fff" stroke="#f0b8c0" stroke-width="1.8"/>
+    <!-- 耳朵（圆润下垂） -->
+    <ellipse cx="8" cy="-7" rx="5" ry="7" fill="#ffe0e8" stroke="#f0b8c0" stroke-width="1.2" transform="rotate(15 8 -7)"/>
+    <ellipse cx="32" cy="-7" rx="5" ry="7" fill="#ffe0e8" stroke="#f0b8c0" stroke-width="1.2" transform="rotate(-15 32 -7)"/>
+    <!-- 眼睛 -->
+    <circle cx="15" cy="0" r="1.5" fill="#c09098"/>
+    <circle cx="25" cy="0" r="1.5" fill="#c09098"/>
+    <!-- 猪鼻子 -->
+    <ellipse cx="20" cy="6" rx="5.5" ry="4" fill="#ffe0e8" stroke="#f0b8c0" stroke-width="1.2"/>
+    <circle cx="17" cy="6" r="1.5" fill="#e8a0b0"/>
+    <circle cx="23" cy="6" r="1.5" fill="#e8a0b0"/>
+    <!-- 前蹄 -->
+    <ellipse cx="8" cy="17" rx="4.5" ry="3" fill="#fff" stroke="#f0b8c0" stroke-width="1.2"/>
+    <ellipse cx="32" cy="17" rx="4.5" ry="3" fill="#fff" stroke="#f0b8c0" stroke-width="1.2"/>
+  </g></g>
+
+  <!-- === 小鸡 === -->
+  <g transform="translate(262, 105)"><g class="breathe">
+    <circle cx="18" cy="18" r="14" fill="#fff" stroke="#f0d080" stroke-width="1.8"/>
+    <path d="M12,6 Q10,0 14,3 Q16,-2 18,4 Q20,-1 22,3 Q26,0 24,6" fill="#ffd080" stroke="#f0c060" stroke-width="1"/>
+    <circle cx="15" cy="14" r="1.3" fill="#c09050"/>
+    <circle cx="21" cy="14" r="1.3" fill="#c09050"/>
+    <polygon points="18,17 15,19 18,21" fill="#ffa040"/>
+    <ellipse cx="8" cy="18" rx="5" ry="3.5" fill="#fff8e0" stroke="#f0d080" stroke-width="1" transform="rotate(-15 8 18)"/>
+    <ellipse cx="28" cy="18" rx="5" ry="3.5" fill="#fff8e0" stroke="#f0d080" stroke-width="1" transform="rotate(15 28 18)"/>
+  </g></g>
+
+  <!-- === 小兔 === -->
+  <g transform="translate(348, 100)"><g class="breathe">
+    <ellipse cx="18" cy="18" rx="14" ry="11" fill="#fff" stroke="#e8b4b8" stroke-width="1.8"/>
+    <circle cx="18" cy="3" r="10" fill="#fff" stroke="#e8b4b8" stroke-width="1.8"/>
+    <ellipse cx="12" cy="-14" rx="4.5" ry="13" fill="#fff" stroke="#e8b4b8" stroke-width="1.4"/>
+    <ellipse cx="12" cy="-14" rx="2.5" ry="10" fill="#ffdde4"/>
+    <ellipse cx="24" cy="-14" rx="4.5" ry="13" fill="#fff" stroke="#e8b4b8" stroke-width="1.4"/>
+    <ellipse cx="24" cy="-14" rx="2.5" ry="10" fill="#ffdde4"/>
+    <circle cx="14" cy="2" r="1.4" fill="#c09098"/>
+    <circle cx="22" cy="2" r="1.4" fill="#c09098"/>
+    <ellipse cx="18" cy="6" rx="1.5" ry="1" fill="#f0b0b8"/>
+    <ellipse cx="8" cy="16" rx="4" ry="2.5" fill="#fff" stroke="#e8b4b8" stroke-width="1.2"/>
+    <ellipse cx="28" cy="16" rx="4" ry="2.5" fill="#fff" stroke="#e8b4b8" stroke-width="1.2"/>
+  </g></g>
+
+  <!-- === 萤火虫渐变定义 === -->
+  <defs>
+    <radialGradient id="fireflyGlow">
+      <stop offset="0%" stop-color="#ffe060" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ffe060" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffe060" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- === 可爱小花（全部避开草的位置）=== -->
+  <!-- 左边缘 粉花 (草在35,78) -->
+  <g transform="translate(6, 118)">
+    <line x1="2" y1="0" x2="2" y2="8" stroke="#c8d8b0" stroke-width="0.9"/>
+    <circle cx="2" cy="-2" r="3" fill="#ffe0ec"/><circle cx="2" cy="-2" r="1.2" fill="#ffb8cc"/>
+  </g>
+  <!-- 小熊小狗之间 粉花 (草在35,78,115) -->
+  <g transform="translate(58, 120)">
+    <line x1="3" y1="0" x2="3" y2="9" stroke="#c8d8b0" stroke-width="1"/>
+    <circle cx="3" cy="-2" r="3.5" fill="#ffe0ec"/><circle cx="3" cy="-2" r="1.5" fill="#ffb8cc"/>
+  </g>
+  <!-- 小狗小猪之间 橙花 (草在115,200) -->
+  <g transform="translate(148, 117)">
+    <line x1="3" y1="0" x2="3" y2="8" stroke="#c8d8b0" stroke-width="1"/>
+    <circle cx="0" cy="-2" r="2.5" fill="#fff0e8"/><circle cx="0" cy="-2" r="1.2" fill="#ff8850"/>
+    <circle cx="6" cy="-2" r="2.5" fill="#fff0e8"/><circle cx="6" cy="-2" r="1.2" fill="#ff8850"/>
+  </g>
+  <!-- 小猪小鸡之间 粉花 (草在200,250) -->
+  <g transform="translate(226, 119)">
+    <line x1="3" y1="0" x2="3" y2="10" stroke="#c8d8b0" stroke-width="1"/>
+    <circle cx="3" cy="-3" r="3.2" fill="#ffe8f0"/><circle cx="3" cy="-3" r="1.3" fill="#ffd0dd"/>
+  </g>
+  <!-- 小鸡小兔之间 橙花 (草在328) -->
+  <g transform="translate(296, 116)">
+    <line x1="3" y1="0" x2="3" y2="7" stroke="#c8d8b0" stroke-width="0.9"/>
+    <circle cx="3" cy="-2" r="2.8" fill="#fff2e8"/><circle cx="3" cy="-2" r="1.1" fill="#ff8850"/>
+  </g>
+  <!-- 右边缘 粉花 (草在372) -->
+  <g transform="translate(388, 120)">
+    <line x1="2" y1="0" x2="2" y2="7" stroke="#c8d8b0" stroke-width="0.9"/>
+    <circle cx="2" cy="-2" r="2.8" fill="#ffe8f0"/><circle cx="2" cy="-2" r="1.1" fill="#ffccd8"/>
+  </g>
+
+  <!-- === 萤火虫（渐变光圈 + 实心核）=== -->
+  <!-- 每只：光圈 + 亮点 -->
+  <circle cx="44" cy="108" r="4.5" fill="url(#fireflyGlow)"/><circle cx="44" cy="108" r="1.5" fill="#ffe060" opacity="0.9"/>
+  <circle cx="90" cy="102" r="4" fill="url(#fireflyGlow)"/><circle cx="90" cy="102" r="1.3" fill="#ffe060" opacity="0.85"/>
+  <circle cx="130" cy="110" r="3.8" fill="url(#fireflyGlow)"/><circle cx="130" cy="110" r="1.2" fill="#ffe060" opacity="0.8"/>
+  <circle cx="170" cy="104" r="4.5" fill="url(#fireflyGlow)"/><circle cx="170" cy="104" r="1.6" fill="#ffe060" opacity="0.9"/>
+  <circle cx="210" cy="108" r="3.5" fill="url(#fireflyGlow)"/><circle cx="210" cy="108" r="1.1" fill="#ffe060" opacity="0.8"/>
+  <circle cx="255" cy="100" r="4.2" fill="url(#fireflyGlow)"/><circle cx="255" cy="100" r="1.4" fill="#ffe060" opacity="0.85"/>
+  <circle cx="290" cy="112" r="3.8" fill="url(#fireflyGlow)"/><circle cx="290" cy="112" r="1.2" fill="#ffe060" opacity="0.8"/>
+  <circle cx="330" cy="104" r="4" fill="url(#fireflyGlow)"/><circle cx="330" cy="104" r="1.5" fill="#ffe060" opacity="0.9"/>
+  <circle cx="360" cy="110" r="3.5" fill="url(#fireflyGlow)"/><circle cx="360" cy="110" r="1.2" fill="#ffe060" opacity="0.85"/>
+  <circle cx="70" cy="114" r="3.2" fill="url(#fireflyGlow)"/><circle cx="70" cy="114" r="1" fill="#ffe060" opacity="0.75"/>
+  <circle cx="315" cy="106" r="3.5" fill="url(#fireflyGlow)"/><circle cx="315" cy="106" r="1.3" fill="#ffe060" opacity="0.8"/>
+
+</svg>
+
+<script>
+  // ---- 模块折叠 ----
+  function toggleModule(id) {
+    const mod = document.getElementById(id);
+    const btn = mod.querySelector('.mod-btn');
+    const isOpen = mod.classList.contains('open');
+    document.querySelectorAll('.module.open').forEach(m => {
+      m.classList.remove('open');
+      const b = m.querySelector('.mod-btn');
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      mod.classList.add('open');
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+    } else {
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  // ---- 密度可控的飘落爱心 ----
+  const heartsEmoji = ['💖', '💕', '💗', '🌸', '✨', '💝'];
+  const HEART_INIT = 25;
+  const HEART_MAX = 50;   // 上限 (初始 * 2)
+  let heartCount = 0;
+
+  function spawnHeart() {
+    if (heartCount >= HEART_MAX) return;
+    heartCount++;
+    const el = document.createElement('span');
+    el.className = 'falling-heart';
+    el.setAttribute('aria-hidden', 'true');
+    el.textContent = heartsEmoji[Math.floor(Math.random() * heartsEmoji.length)];
+    el.style.left = Math.random() * 95 + '%';
+    el.style.fontSize = (16 + Math.random() * 24) + 'px';
+    el.style.animationDuration = (8 + Math.random() * 12) + 's';
+    el.style.animationDelay = Math.random() * 3 + 's';
+    document.body.appendChild(el);
+    el.addEventListener('animationend', () => { el.remove(); heartCount--; });
+  }
+
+  for (let i = 0; i < HEART_INIT; i++) spawnHeart();
+
+  // 间隔随密度增大：接近上限时变慢
+  function scheduleHeart() {
+    if (heartCount >= HEART_MAX) {
+      setTimeout(scheduleHeart, 1000); // 满了就等一下再检查
+      return;
+    }
+    spawnHeart();
+    const ratio = heartCount / HEART_MAX;
+    const next = 800 + ratio * 4000; // 密度低时 ~0.8s/颗，接近上限时 ~4.8s/颗
+    setTimeout(scheduleHeart, next);
+  }
+  setTimeout(scheduleHeart, 2000);
+
+  // ---- 错开出发的蓬松云朵 ----
+  const clouds = document.getElementById('clouds');
+
+  // 云朵造型模板：返回 [{w, h, x, y}]，x/y 为正偏移，wrap 会设宽高包住所有 blob
+  const cloudShapes = [
+    // 宽扁型
+    (s) => {
+      const offX = s * 0.6; const offY = 0;
+      return { w: s * 1.6, h: s * 0.65, offY,
+        blobs: [
+          { w: s,     h: s*0.55, x: offX + s*0.3,        y: s*0.2 },
+          { w: s*0.75,h: s*0.7,  x: offX + s*0.15,       y: s*0.05 },
+          { w: s*0.7, h: s*0.65, x: offX + s*0.65,       y: s*0.02 },
+          { w: s*0.55,h: s*0.5,  x: offX + s*0.05,       y: s*0.18 },
+          { w: s*0.5, h: s*0.45, x: offX + s*0.85,       y: s*0.12 },
+          { w: s*0.35,h: s*0.35, x: offX,                 y: s*0.22 },
+      ]};
+    },
+    // 圆胖型
+    (s) => {
+      const offX = s * 0.55; const offY = s * 0.15;
+      return { w: s * 1.7, h: s * 1.0, offY,
+        blobs: [
+          { w: s*1.05,h: s*0.8,  x: offX + s*0.25,       y: s*0.1 },
+          { w: s*0.85,h: s*0.85, x: offX + s*0.05,       y: s*0.0 },
+          { w: s*0.75,h: s*0.75, x: offX + s*0.55,       y: s*0.02 },
+          { w: s*0.55,h: s*0.5,  x: offX,                 y: s*0.2 },
+          { w: s*0.5, h: s*0.45, x: offX + s*0.85,       y: s*0.1 },
+      ]};
+    },
+    // 小巧型
+    (s) => {
+      const offX = s * 0.4; const offY = 0;
+      return { w: s * 1.3, h: s * 0.6, offY,
+        blobs: [
+          { w: s*0.9, h: s*0.5,  x: offX + s*0.2,        y: s*0.2 },
+          { w: s*0.65,h: s*0.6,  x: offX + s*0.05,       y: s*0.05 },
+          { w: s*0.55,h: s*0.55, x: offX + s*0.55,       y: s*0.04 },
+          { w: s*0.4, h: s*0.4,  x: offX,                 y: s*0.15 },
+      ]};
+    },
+    // 长条型
+    (s) => {
+      const offX = s * 0.5; const offY = 0;
+      return { w: s * 2.0, h: s * 0.55, offY,
+        blobs: [
+          { w: s,     h: s*0.5,  x: offX + s*0.4,        y: s*0.15 },
+          { w: s*0.7, h: s*0.65, x: offX + s*0.2,        y: s*0.05 },
+          { w: s*0.65,h: s*0.6,  x: offX + s*0.7,        y: s*0.02 },
+          { w: s*0.55,h: s*0.55, x: offX + s*0.05,       y: s*0.1 },
+          { w: s*0.5, h: s*0.5,  x: offX + s*0.95,       y: s*0.08 },
+          { w: s*0.35,h: s*0.35, x: offX + s*0.85,       y: s*0.2 },
+          { w: s*0.3, h: s*0.3,  x: offX + s*0.15,       y: s*0.18 },
+      ]};
+    },
+  ];
+
+  function spawnCloud() {
+    const wrap = document.createElement('div');
+    wrap.className = 'cloud-wrap';
+    const baseSize = 35 + Math.random() * 65;
+    const shape = cloudShapes[Math.floor(Math.random() * cloudShapes.length)](baseSize);
+
+    // 设 wrap 尺寸，让子元素绝对定位有参考
+    wrap.style.width = shape.w + 'px';
+    wrap.style.height = shape.h + 'px';
+    wrap.style.top = (5 + Math.random() * 60 - shape.offY) + '%';
+
+    shape.blobs.forEach(b => {
+      const el = document.createElement('span');
+      el.className = 'cloud-blob';
+      el.style.width = b.w + 'px';
+      el.style.height = b.h + 'px';
+      el.style.left = b.x + 'px';
+      el.style.top = b.y + 'px';
+      wrap.appendChild(el);
+    });
+
+    const dur = 35 + Math.random() * 55;
+    wrap.style.animation = `drift ${dur}s linear infinite`;
+    // 随机初始相位 — 让云朵分散在屏幕各处
+    wrap.style.animationDelay = -(Math.random() * dur) + 's';
+    clouds.appendChild(wrap);
+  }
+
+  // 密度可控的云朵生成
+  const CLOUD_INIT = 14;  // 初始数量 (8 * 1.75)
+  const CLOUD_MAX = 28;   // 上限 (初始 * 2)
+  let cloudCount = 0;
+
+  for (let i = 0; i < CLOUD_INIT; i++) { spawnCloud(); cloudCount++; }
+
+  function scheduleCloud() {
+    if (cloudCount >= CLOUD_MAX) {
+      setTimeout(scheduleCloud, 2000); // 满了等一下再检查
+      return;
+    }
+    spawnCloud(); cloudCount++;
+    const ratio = cloudCount / CLOUD_MAX;
+    // 密度低 ~5s/朵，接近上限 ~20s/朵
+    const next = 5000 + ratio * 15000;
+    setTimeout(scheduleCloud, next);
+  }
+  setTimeout(scheduleCloud, 8000);
+
+  // ---- BGM ----
+  const bgm = document.getElementById('bgmAudio');
+  const musicBtn = document.getElementById('musicBtn');
+  let bgmReady = false;
+  let userTouched = false;
+
+  musicBtn.textContent = '⏳';
+  musicBtn.classList.add('loading');
+
+  function tryAutoPlay() {
+    if (bgmReady) return;
+    bgmReady = true;
+    musicBtn.classList.remove('loading');
+    // 先尝试非静音播放（回访用户浏览器可能允许）
+    bgm.muted = false;
+    bgm.play().then(() => {
+      musicBtn.textContent = '🎶';
+      musicBtn.classList.add('playing');
+    }).catch(() => {
+      // 被拦截，静音自动播放
+      bgm.muted = true;
+      bgm.play().then(() => {
+        musicBtn.textContent = '🔇';
+      }).catch(() => {
+        musicBtn.textContent = '▶️';
+      });
+    });
+  }
+
+  // canplay 比 canplaythrough 更早触发，确保快速启动
+  bgm.addEventListener('canplay', tryAutoPlay, { once: true });
+  // 3 秒超时兜底：事件没触发也强行尝试
+  setTimeout(tryAutoPlay, 3000);
+
+  function unmuteAndPlay() {
+    if (userTouched) return;
+    userTouched = true;
+    if (bgm.muted) {
+      bgm.muted = false;
+      bgm.play().catch(() => {});
+    }
+    musicBtn.textContent = '🎶';
+    musicBtn.classList.add('playing');
+  }
+
+  function toggleMusic(event) {
+    event.stopPropagation();
+    if (!bgmReady) return;
+    if (bgm.paused) {
+      bgm.muted = false;
+      bgm.play().then(() => {
+        musicBtn.textContent = '🎶';
+        musicBtn.classList.add('playing');
+      }).catch(() => {});
+    } else {
+      bgm.pause();
+      musicBtn.textContent = '⏸️';
+      musicBtn.classList.remove('playing');
+    }
+  }
+
+  // 首次点击页面 → 取消静音
+  document.addEventListener('click', (e) => {
+    if (!userTouched) unmuteAndPlay();
+  }, { once: true });
+
+
+  // ---- 礼物音频 ----
+  const giftAudio = document.getElementById('giftAudio');
+  const playBtn = document.getElementById('playBtn');
+  const timeDisplay = document.getElementById('timeDisplay');
+  function fmt(t) { if (isNaN(t)) return '--:--'; const m = Math.floor(t/60), s = Math.floor(t%60); return String(m).padStart(2,'0')+':'+String(s).padStart(2,'0'); }
+  giftAudio.addEventListener('loadedmetadata', () => { timeDisplay.textContent = '00:00 / '+fmt(giftAudio.duration); });
+  giftAudio.addEventListener('timeupdate', () => { timeDisplay.textContent = fmt(giftAudio.currentTime)+' / '+fmt(giftAudio.duration); });
+  giftAudio.addEventListener('ended', () => { playBtn.textContent = '▶️'; playBtn.classList.remove('playing'); });
+  function toggleAudio() {
+    if (giftAudio.paused) { giftAudio.play(); playBtn.textContent = '⏸️'; playBtn.classList.add('playing'); }
+    else { giftAudio.pause(); playBtn.textContent = '▶️'; playBtn.classList.remove('playing'); }
+  }
+</script>
+
+</body>
+</html>
