@@ -126,7 +126,7 @@
       <span class="mod-arrow">▼</span>
     </button>
     <div class="mod-body">
-      <video src="video.mp4" controls playsinline poster="poster.webp" style="width:100%;border-radius:16px;aspect-ratio:16/10;object-fit:contain;background:#000;" preload="none"></video>
+      <video id="bgmVideo" src="video.mp4" controls playsinline poster="poster.webp" style="width:100%;border-radius:16px;aspect-ratio:16/10;object-fit:contain;background:#000;" preload="none"></video>
     </div>
   </div>
 
@@ -256,6 +256,12 @@
   function unmuteAndPlay(){if(userTouched)return;userTouched=true;if(bgm.muted){bgm.muted=false;bgm.play().catch(()=>{});}musicBtn.textContent='🎶';musicBtn.classList.add('playing');}
   function toggleMusic(e){e.stopPropagation();if(!bgmReady)return;if(bgm.paused){bgm.muted=false;bgm.play().then(()=>{musicBtn.textContent='🎶';musicBtn.classList.add('playing');}).catch(()=>{});}else{bgm.pause();musicBtn.textContent='⏸️';musicBtn.classList.remove('playing');}}
   document.addEventListener('click',(e)=>{if(!userTouched)unmuteAndPlay();},{once:true});
+  const video=document.getElementById('bgmVideo');
+  if(video){
+    video.addEventListener('play',()=>{if(!bgm.paused){bgm.pause();video._bgmWasPlaying=true;}});
+    video.addEventListener('pause',()=>{if(video._bgmWasPlaying){bgm.play().catch(()=>{});video._bgmWasPlaying=false;}});
+    video.addEventListener('ended',()=>{if(video._bgmWasPlaying){bgm.play().catch(()=>{});video._bgmWasPlaying=false;}});
+  }
 </script>
 </body>
 </html>
